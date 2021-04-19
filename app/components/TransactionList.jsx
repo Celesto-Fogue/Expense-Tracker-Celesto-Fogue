@@ -7,7 +7,7 @@ import Transaction from "./Transaction";
 export default function TransactionList({ transactions, deleteTransaction }) {
   return (
     <View style={styles.container}>
-      <Text style={[heading.h4, heading.subTitle]}>History</Text>
+      <Text style={[heading.h4, heading.subTitle]}>Historique</Text>
       {transactions.map((item) => {
         return (
           <Transaction

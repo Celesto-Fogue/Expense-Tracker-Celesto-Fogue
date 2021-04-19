@@ -17,13 +17,13 @@ export default function IncomeExpenses({ transactions }) {
   return (
     <View style={styles.container}>
       <View style={[styles.box, styles.firstBox]}>
-        <Text style={heading.h4}>Income</Text>
-        <Text style={styles.money}>${numberWithCommas(income.toFixed(2))}</Text>
+        <Text style={heading.h4}>Revenu</Text>
+        <Text style={styles.money}>Fcfa{numberWithCommas(income.toFixed(2))}</Text>
       </View>
       <View style={styles.box}>
-        <Text style={heading.h4}>Expense</Text>
+        <Text style={heading.h4}>dépense</Text>
         <Text style={styles.money}>
-          ${numberWithCommas(Math.abs(expense).toFixed(2))}
+          Fcfa{numberWithCommas(Math.abs(expense).toFixed(2))}
         </Text>
       </View>
     </View>

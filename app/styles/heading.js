@@ -6,7 +6,7 @@ export const heading = StyleSheet.create({
     textTransform: "uppercase",
   },
   subTitle: {
-    borderBottomColor: "#bbb",
+    borderBottomColor: "#ffc800",
     borderBottomWidth: 1,
     paddingBottom: 5,
   },

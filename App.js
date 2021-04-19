@@ -20,18 +20,18 @@ export default function App() {
   const [transactions, setTransactions] = useState([
     {
       id: 1,
-      amount: "1400",
-      name: "Deposit",
+      amount: "5000",
+      name: "Dépôt",
     },
     {
       id: 2,
-      amount: "-20",
-      name: "Dinner",
+      amount: "-400",
+      name: "petit-déjeuner",
     },
     {
       id: 3,
       amount: "-500",
-      name: "Camera",
+      name: "coiffure",
     },
   ]);
 
@@ -53,7 +53,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior={Platform.OS == "ios" ? "padding" : "height"}
+        behavior={Platform.OS == "android" ? "padding" : "height"}
       >
         <ScrollView style={styles.scrollView}>
           <Header />
@@ -75,7 +75,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f7f7f7",
+    backgroundColor: "#82ffe4",
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   scrollView: {},

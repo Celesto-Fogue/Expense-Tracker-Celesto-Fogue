@@ -11,9 +11,9 @@ export default function Balance({ transactions }) {
 
   return (
     <View style={styles.container}>
-      <Text style={heading.h4}>Your Balance:</Text>
+      <Text style={heading.h4}>Votre solde:</Text>
       <Text style={styles.balance}>
-        ${numberWithCommas(balance.toFixed(2))}
+        Fcfa{numberWithCommas(balance.toFixed(2))}
       </Text>
     </View>
   );
@@ -22,7 +22,7 @@ export default function Balance({ transactions }) {
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    margin: 10,
+    marginTop: 25,
   },
   balance: {
     fontSize: 25,

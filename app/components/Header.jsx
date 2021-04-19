@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Header() {
   return (
     <View style={styles.header}>
-      <Text style={styles.text}>Expense Tracker</Text>
+      <Text style={styles.text}>Expense Tracker Celesto Fogue</Text>
     </View>
   );
 }
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     height: 60,
     alignSelf: "stretch",
     padding: 15,
-    backgroundColor: "black",
+    backgroundColor: "green",
   },
   text: {
     color: "white",
